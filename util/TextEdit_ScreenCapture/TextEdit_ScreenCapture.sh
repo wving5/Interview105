@@ -2,9 +2,10 @@
 
 # 0. Requirements: 
 # 0.1 ImageMagick
+## For old macOS version which `brew install imagemagick` wont work
 ## 0.1.1 Install old version manually using MacPorts, as described in https://trac.macports.org/wiki/howto/InstallingOlderPort
-## 0.1.2 proxy settings: /opt/local/etc/macports/macports.conf
-## 0.1.3 cd ${git_root}/graphics/ImageMagick & sudo port install -- -x11
+## 0.1.2 proxy settings: /opt/local/etc/macports/macports.conf ( `sudo` reset env)
+## 0.1.3 cd ${git_root}/graphics/ImageMagick & sudo port -v install -- -x11 (use -f if dependency conflicts happen)
 # 0.2 pngcopy / pngpaste
 ## make & install
 
