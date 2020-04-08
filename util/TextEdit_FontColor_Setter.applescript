@@ -24,6 +24,9 @@ on nextColorAvaliable(currentColor)
 		end if
 		set i to i + 1
 	end repeat
+	if i > (count of _availableColors) then
+		set i to 0
+	end if
 	return item ((i mod (count of _availableColors)) + 1) of _availableColors
 end nextColorAvaliable
 
